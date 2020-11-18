@@ -1,0 +1,95 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background: rgb(19,62,124);
+    background: linear-gradient(180deg, rgba(19,62,124,1) 0%, rgba(9,24,51,1) 100%);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*GRID WRAPPER*/
+
+:root {
+    --dark_purple: #711C91;
+    --pink: #EA00D9;
+    --light_blue: #0ABDC6;
+    --dark_blue: #133E7C;
+    --background_blue: #091833;
+    --light_green: #02C63D;
+    --dark_green: #005319;
+    --white: #ffffff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(19, 310px);
+    width: 1260px;
+}
+
+.satilite {
+    height: 65px;
+    width: auto;
+}
+
+.eyebrow_text {
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    font-size: 65px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+}
+
+.header_text {
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    font-size: 65px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+}
