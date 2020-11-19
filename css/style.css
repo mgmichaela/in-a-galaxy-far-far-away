@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background: rgb(19,62,124);
+    background: linear-gradient(180deg, rgba(19,62,124,1) 0%, rgba(9,24,51,1) 100%);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: alarm-clock;
+    src: url(/fonts/alarm\ clock.ttf);
+}
+
+@font-face{
+    font-family: gomarice;
+    src: url(/fonts/gomarice_gogono_cocoa_mochi.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(/fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(/fonts/norwester.otf);
+}
+
+:root {
+    --dark_purple: #711C91;
+    --pink: #EA00D9;
+    --light_blue: #0ABDC6;
+    --dark_blue: #133E7C;
+    --background_blue: #091833;
+    --light_green: #02C63D;
+    --dark_green: #005319;
+    --white: #ffffff;
+    --grey: #F2F2f2;
+}
+
+.shadowed {
+    width: 150px;
+    -webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7));
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(19, 310px);
+    width: 1260px;
+}
+
+.satilite {
+    height: 65px;
+    width: auto;
+    grid-column-start: 12 ;
+    grid-column-end: -1;
+    align-self: center;
+    justify-self: center;
+}
+
+.eyebrow_text {
+    font-family: norwester;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    font-size: 62px;
+    transform: translateY(-40px);
+    color: var(--grey);
+}
+
+.header_text {
+    font-family: gomarice;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    font-size: 105px;
+    transform: translateY(40px);
+    color: var(--pink);
+    -webkit-text-stroke: 1px white;
+}
+
+.star_big {
+    grid-column-start: 5 ;
+    grid-column-end: 6;
+    height: 25px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
