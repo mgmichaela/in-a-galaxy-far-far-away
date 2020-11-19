@@ -3,7 +3,7 @@
     src: url(/fonts/alarm\ clock.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: gomarice;
     src: url(/fonts/gomarice_gogono_cocoa_mochi.ttf);
 }
@@ -31,29 +31,104 @@
 }
 
 .r3_iss_position {
+    font-family: Kollektif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    justify-self: center;
+    align-self: center;
+    color: var(--white);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
 
+.r3_numbers {
+    text-align: right;
+}
+
+.lat_num {
+    color: var(--pink);
+}
+
+.long_num {
+    color: var(--pink);
+}
+
+.r3_star {
+    height: 20px;
+    /*transform: translateY(125px);*/
+    grid-column-start: 1;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .r3_iss_satellite {
-
+    width: 140px;
+    justify-self: center;
+    align-self: center;
+    transform: rotate(-40deg); 
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .r3_sun {
-
+    width: 160px;
+    z-index: -1;
+    transform: translateY(-80px) translateX(40px);
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .r3_earth {
-
+    width: 300px;
+    transform: translateY(-60px);
+    justify-self: center;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .r3_clouds {
-
+    width: 350px;
+    justify-self: center;
+    transform: translateY(-105px);
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .r3_moon {
-
+    width: 100px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .r3_list_of_names {
-    
+    font-family: Kollektif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--pink);
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 3;
 }
