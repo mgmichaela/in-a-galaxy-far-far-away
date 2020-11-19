@@ -1,0 +1,31 @@
+@font-face {
+    font-family: alarm-clock;
+    src: url(/fonts/alarm\ clock.ttf);
+}
+
+@font-face{
+    font-family: gomarice;
+    src: url(/fonts/gomarice_gogono_cocoa_mochi.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(/fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(/fonts/norwester.otf);
+}
+
+:root {
+    --dark_purple: #711C91;
+    --pink: #EA00D9;
+    --light_blue: #0ABDC6;
+    --dark_blue: #133E7C;
+    --background_blue: #091833;
+    --light_green: #02C63D;
+    --dark_green: #005319;
+    --white: #ffffff;
+    --grey: #F2F2f2;
+}

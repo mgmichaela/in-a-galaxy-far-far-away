@@ -49,8 +49,25 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: alarm-clock;
+    src: url(/fonts/alarm\ clock.ttf);
+}
 
-/*GRID WRAPPER*/
+@font-face{
+    font-family: gomarice;
+    src: url(/fonts/gomarice_gogono_cocoa_mochi.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(/fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(/fonts/norwester.otf);
+}
 
 :root {
     --dark_purple: #711C91;
@@ -61,6 +78,13 @@ table {
     --light_green: #02C63D;
     --dark_green: #005319;
     --white: #ffffff;
+    --grey: #F2F2f2;
+}
+
+.shadowed {
+    width: 150px;
+    -webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7));
 }
 
 .wrapper {
@@ -74,22 +98,41 @@ table {
 .satilite {
     height: 65px;
     width: auto;
+    grid-column-start: 12 ;
+    grid-column-end: -1;
+    align-self: center;
+    justify-self: center;
 }
 
 .eyebrow_text {
+    font-family: norwester;
     grid-column-start: 1 ;
     grid-column-end: 5;
-    font-size: 65px;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
+    font-size: 62px;
+    transform: translateY(-40px);
+    color: var(--grey);
 }
 
 .header_text {
+    font-family: gomarice;
     grid-column-start: 1 ;
     grid-column-end: 5;
-    font-size: 65px;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
+    font-size: 105px;
+    transform: translateY(40px);
+    color: var(--pink);
+    -webkit-text-stroke: 1px white;
+}
+
+.star_big {
+    grid-column-start: 5 ;
+    grid-column-end: 6;
+    height: 25px;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
