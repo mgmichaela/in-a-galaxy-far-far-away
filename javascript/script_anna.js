@@ -18,17 +18,19 @@ const astronautData = fetch(astroUrl)
         }
     })
 
-
-const issData = (n) => {
-    setInterval(async function () {
-        const response = await fetch(issUrl);
-        const data = await response.json();
-        let newLatitude = data.iss_position.latitude;
-            let newLongitude = data.iss_position.longitude;
-            latitude.innerText = newLatitude;
-            longitude.innerText = newLongitude;
-    }, n);
+const getIssData = async function () {
+    const response = await fetch(issUrl);
+    const data = await response.json();
+    let newLatitude = data.iss_position.latitude;
+    let newLongitude = data.iss_position.longitude;
+    latitude.innerText = newLatitude;
+    longitude.innerText = newLongitude;
 }
 
-issData(2000);
+const issDataIntervals = (n) => {
+    setInterval(getIssData, n);
+}
+
+getIssData();
+issDataIntervals(2000);
 
