@@ -184,7 +184,7 @@ body {
     grid-area: 5 / 1 / 6 / 2;
     color: var(--grey);
     align-self: flex-end;
-    transform: translateY(-150px);
+    transform: translateY(-90px);
 }
 
 .r5_percentage_text {
@@ -195,7 +195,7 @@ body {
     -webkit-text-stroke: 1px white;
     text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
     align-self: flex-end;
-    transform: translateY(-30px);
+    transform: translateY(30px);
 }
 
 .r5_body_text_percentage {
@@ -204,6 +204,7 @@ body {
     grid-area: 5 / 1 / 6 / 7;
     color: var(--grey);
     align-self: flex-end;
+    transform: translateY(60px);
 }
 
 .r5_star_big {
@@ -282,6 +283,16 @@ body {
     width: auto;
     align-self: center;
     justify-self: right;
+}
+
+/* ROW 15 */
+
+.r15_saturn {
+    grid-area: 15 / 10 / 16 / -1;
+    height: 135pt;
+    width: auto;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 /* ROW 16 */

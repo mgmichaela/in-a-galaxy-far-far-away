@@ -48,7 +48,7 @@
     grid-row-start: 2;
     align-self: top;
     justify-self: right;
-    transform: translateY(50px) translateX(-2px);
+    transform: translateY(60px) translateX(-2px);
     
 
 }
@@ -62,7 +62,7 @@
     grid-row-end: 3;
     align-self: center;
     justify-self: center;
-    transform: translateY(-30px);
+    transform: translateY(-50px);
     
 }
 
@@ -75,8 +75,8 @@
     grid-row-end:3;
     justify-self: center;
     align-self: flex-end;
-    transform: translateY(20px)
-    
+    transform: translateY(-10px);
+    z-index: 3;
    
 }
 
@@ -89,8 +89,7 @@
     grid-row-end: 3;
     justify-self: top;
     justify-self: right;
-    transform: translateX(-50px);
-    transform: rotate(30deg);
+    transform: translateX(60px) translateY(-50px) rotate(30deg);
 }
 
 .r2_spaceMan {
@@ -108,8 +107,8 @@
     font-size: 24pt;
     grid-column-start: 11;
     grid-column-end: -1;
-    grid-row: 2;
-    transform: translateX(40px);
+    grid-row: 2 / 3;
+    transform: translateX(30px) translateY(20px);
 
 }
 .r2_spaceManTextTwo {
@@ -118,8 +117,9 @@
     font-size: 24pt;
     grid-column-start: 11;
     grid-column-end: -1;
-    grid-row: 2;
-    transform: translateY(250px) translateX(40px);
+    grid-row: 2 / 3;
+    align-self: flex-end;
+    transform: translateX(30px) translateY(-20px);
 }
 
 .r2_astronautNumber {
@@ -148,10 +148,7 @@
     grid-row-end: 7;
     justify-self: center;
     align-self: center;
-    /* align-self: flex-end; */
-    transform: rotate(180deg);
-
-
+    transform: translateY(50px) rotate(180deg);
 }
 
 .r6_star {
@@ -196,7 +193,7 @@
     grid-column-end: 4;
     grid-row-start: 14;
     grid-row-end: 15;
-    transform: translateX(-50px)
+    transform: translateX(-50px);
 }
 
 .r14_wifi {
@@ -209,7 +206,6 @@
     color: var(--grey);
     justify-self: center;
     align-self: flex-start;
-    /* transform: rotate(180deg); */
-    transform: translateY(-30px) translateX(50px);
+    transform: translateY(-40px) translateX(52px) rotate(-42deg);
 
 }
