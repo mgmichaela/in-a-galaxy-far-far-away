@@ -29,3 +29,149 @@
     --white: #ffffff;
     --grey: #F2F2f2;
 }
+
+.r4_arrow {
+    grid-column: 12 / 13;
+    grid-row: 4 / 5;
+    height: 60pt;
+    transform: translateY(-65px) rotate(120deg);
+    align-self: start;
+}
+
+.r4_pop {
+    grid-column: 10 / 13;
+    grid-row: 4 / 5;
+    font-family: kollektif;
+    font-size: 24pt;
+    color: var(--grey);
+    text-align: right;
+    align-self: center;
+}
+
+.r4_pop_no {
+    grid-column: 5 / 13;
+    grid-row: 4 / 5;
+    align-self: end;
+    justify-self: right;
+    font-family: gomarice;
+    font-size: 94pt;
+    color: var(--pink);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
+}
+
+
+.r4_star1 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: left;
+    transform: translateY(-100px);
+    height: 25px;
+}
+
+.r4_star2 {
+    grid-column: 12 / 13;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: right;
+    transform: translateY(-100px) translateX(10px);
+    height: 25px;
+}
+
+.r4_star3 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: left;
+    transform: translateY(-80px) translateX(20px);
+    height: 15px;
+}
+
+.r4_star4 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: left;
+    transform: translateY(-130px) translateX(10px);
+    height: 15px;
+}
+
+.r4_star5 {
+    grid-column: 12 / 13;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: right;
+    transform: translateY(-70px) translateX(-10px);
+    height: 15px;
+}
+
+
+.r8_star1 {
+    grid-column: 11 / 12;
+    grid-row: 8 / 9;
+    align-self: end;
+    justify-self: right;
+    transform: translateX(-20px);
+    height: 15px;
+}
+
+.r8_star2 {
+    grid-column: 4 / 5;
+    grid-row: 8 / 9;
+    align-self: center;
+    justify-self: left;
+    transform: translateY(60px);
+    height: 25px;
+}
+
+.r8_arrow {
+    grid-column: 10 / 11;
+    grid-row: 8 / 9;
+    height: 60pt;
+    transform: rotate(100deg);
+    align-self: center;
+    justify-self: left;
+}
+
+.r12_picture_info {
+    grid-column: 2 / 8;
+    grid-row: 12 / 13;
+    align-self: start;
+    font-family: kollektif;
+    font-size: 21pt;
+    color: var(--grey);
+}
+
+.r12_star1 {
+    grid-column: 4 / 5;
+    grid-row: 12 / 13;
+    align-self: center;
+    justify-self: left;
+    transform: translateY(10px);
+    height: 25px;
+}
+
+.r10_r11 {
+    grid-column: 2 / 12;
+    grid-row: 10 / 12;
+    width: 1050px;
+    height: 600px;
+    align-self: center;
+    display: grid;
+    background-image: url("/assets/Arp273Main_HubblePestana_3079.jpg");
+    background-size: cover;
+}
+
+.r11_theater {
+    width: 1050px;
+    align-self: end;
+}
+
+.r11_star {
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
+    align-self: end;
+    justify-self: left;
+    height: 25px;
+}
