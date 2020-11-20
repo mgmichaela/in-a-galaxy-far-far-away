@@ -135,7 +135,7 @@
     color: var(--pink);
     grid-column-start: 11;
     grid-column-end: 13;
-    grid-row-start: 3;
+    list-style: none;
 }
 
 .r3_galaxy {
