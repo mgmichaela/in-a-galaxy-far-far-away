@@ -2,8 +2,8 @@ const astroUrl = 'http://api.open-notify.org/astros.json';
 const issUrl = 'http://api.open-notify.org/iss-now.json';
 const astronautsInSpace = document.querySelector('.r2_astronautNumber');
 const astronautNames = document.querySelector('.r3_list_of_names');
-const latitude = document.querySelector('.lat_num');
-const longitude = document.querySelector('.long_num');
+let latitude = document.querySelector('.lat_num');
+let longitude = document.querySelector('.long_num');
 
 const astronautData = fetch(astroUrl)
     .then(response => response.json())
@@ -18,11 +18,17 @@ const astronautData = fetch(astroUrl)
         }
     })
 
-const issData = fetch(issUrl)
-    .then(response => response.json())
-    .then(data => {
+
+const issData = (n) => {
+    setInterval(async function () {
+        const response = await fetch(issUrl);
+        const data = await response.json();
         let newLatitude = data.iss_position.latitude;
-        let newLongitude = data.iss_position.longitude;
-        latitude.innerText = newLatitude;
-        longitude.innerText = newLongitude;
-    })
+            let newLongitude = data.iss_position.longitude;
+            latitude.innerText = newLatitude;
+            longitude.innerText = newLongitude;
+    }, n);
+}
+
+issData(2000);
+
