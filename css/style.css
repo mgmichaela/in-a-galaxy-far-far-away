@@ -226,10 +226,11 @@ body {
 
 .r9_body_text1 {
     grid-area: 9 / 3 / 10 / 11 ;
-    font-size: 21pt;
+    font-size: 24pt;
     font-family: kollektif;
     color: var(--grey);
     text-align: center;
+    align-self: center;
 }
 
 .APOD {

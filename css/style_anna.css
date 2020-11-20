@@ -41,7 +41,7 @@
 .r4_pop {
     grid-column: 10 / 13;
     grid-row: 4 / 5;
-    font-family: norwester;
+    font-family: kollektif;
     font-size: 24pt;
     color: var(--grey);
     text-align: right;
@@ -138,8 +138,8 @@
     grid-column: 2 / 8;
     grid-row: 12 / 13;
     align-self: start;
-    font-family: norwester;
-    font-size: 24pt;
+    font-family: kollektif;
+    font-size: 21pt;
     color: var(--grey);
 }
 
