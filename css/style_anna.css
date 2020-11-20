@@ -161,6 +161,7 @@
     display: grid;
     background-image: url("/assets/Arp273Main_HubblePestana_3079.jpg");
     background-size: cover;
+    z-index: 2;
 }
 
 .r11_theater {
@@ -174,4 +175,14 @@
     align-self: end;
     justify-self: left;
     height: 25px;
+}
+
+.r10_galaxy {
+    grid-area: 10 / 8 / 13 / -1;
+    height: 450px;
+    width: auto;
+    align-self: center;
+    transform: translateY(120px) translateX(-40px) rotate(-20deg);
+    z-index: 1;
+    opacity: 0.4;
 }

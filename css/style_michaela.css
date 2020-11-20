@@ -77,6 +77,7 @@
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
+    z-index: 2;
 }
 
 .r3_sun {
@@ -97,6 +98,7 @@
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 4;
+    z-index: 2;
 }
 
 .r3_clouds {
@@ -107,6 +109,7 @@
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 4;
+    z-index: 3;
 }
 
 .r3_moon {
@@ -117,6 +120,7 @@
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 4;
+    z-index: 4;
 }
 
 .r3_list_of_names {
@@ -126,9 +130,117 @@
     font-size: 17px;
     line-height: 20px;
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
+    transform: translateX(30px);
     color: var(--pink);
     grid-column-start: 11;
     grid-column-end: 13;
     grid-row-start: 3;
+}
+
+.r3_galaxy {
+    height: 350px;
+    grid-area: 3 / 4 / 5 / 9 ;
+    opacity: 0.4;
+    z-index: 1;
+    transform: translateX(-110px) translateY(40px) rotate(45deg);
+}
+
+.r7_wrapper {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.r7_frame {
+    position: absolute;
+    Width: 250px;
+    z-index: -1;
+}
+
+.r7_weather_report {
+    font-family: alarm-clock;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--white);
+    transform: translateX(32px) translateY(20px);
+}
+
+.r7_earth_div, .r7_mars_div {
+    font-family: alarm-clock;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--light_green);
+    transform: translateX(32px) translateY(40px);
+}
+
+.r7_planet {
+    width: 100px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    transform: translateX(-50px) translateY(-20px);
+}
+
+.r7_text {
+    font-family: Kollektif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--white);
+    text-align: right;
+    align-self: flex-end;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.r7_current_obj {
+    font-family: Gogono Cocoa Mochi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 95px;
+    line-height: 95px;
+    color: var(--pink);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.r7_object {
+    width: 420px;
+    transform: rotate(1.13deg);
+    transform: translateX(45px) translateY(-50px);
+    justify-self: flex-end;
+    align-self: center;
+    grid-column-start: 9;
+    grid-column-end: -1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.r7_star {
+    width: 25px;
+    transform: translateX(45px) translateY(300px);
+    grid-column-start: 12;
+    grid-column-end: -1;
+    grid-row-start: 7;
+    grid-row-end: 8;
 }
