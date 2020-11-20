@@ -34,7 +34,7 @@
     grid-column: 12 / 13;
     grid-row: 4 / 5;
     height: 60pt;
-    transform: rotate(120deg);
+    transform: translateY(-65px) rotate(120deg);
     align-self: start;
 }
 
@@ -130,7 +130,7 @@
     grid-row: 8 / 9;
     height: 60pt;
     transform: rotate(100deg);
-    align-self: end;
+    align-self: center;
     justify-self: left;
 }
 

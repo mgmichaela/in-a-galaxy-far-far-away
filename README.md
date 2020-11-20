@@ -6,7 +6,7 @@
 Create a webpage that uses one or more APIs
 ```
 
-For this brief team 10 decided on create an infographic page that updates live depending on the changes in data retrieved from various APIs. The goals for the individual team members included making something we would be proud to display and perhaps used in our portfolios, so a lot of attention was given to the aesthetics and the planning around development took a significant amount of time to meet the design that was created in Figma. 
+For this brief team 10 decided to create an infographic page that updates live depending on the changes in data retrieved from various APIs. The goals for the individual team members included making something we would be proud to display and perhaps even used in our portfolios, so a lot of attention was given to the aesthetics, and the planning around development took a significant amount of time.  
 
 ---
 Tools Used
