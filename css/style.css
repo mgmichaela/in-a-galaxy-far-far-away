@@ -172,9 +172,9 @@ body {
 /* ROW 5 */
 
 .r5_arrow {
-    grid-area: 5 / 5 / 6 / 6 ;
+    grid-area: 5 / 4 / 6 / 6 ;
     height: 60px;
-    transform: rotate(280deg);
+    transform: translateY(50px) rotate(280deg);
     justify-self: center;
 }
 
@@ -226,10 +226,11 @@ body {
 
 .r9_body_text1 {
     grid-area: 9 / 3 / 10 / 11 ;
-    font-size: 21pt;
+    font-size: 24pt;
     font-family: kollektif;
     color: var(--grey);
     text-align: center;
+    align-self: center;
 }
 
 .APOD {
@@ -245,7 +246,7 @@ body {
     grid-area: 9 / 1 / 10 / 2;
     height: 65px;
     width: auto;
-    align-self: flex-end ;
+    align-self: center ;
 }
 
 .r9_star_small {
@@ -290,7 +291,21 @@ body {
     width: auto;
     grid-area: 16 / 4 / 18 / 10;
     justify-self: center;
+    z-index: 1;
 }
+
+.r16_quotetext {
+    grid-area: 16 / 5 / 17 / 9;
+    z-index: 2;
+    align-self: center;
+    justify-self: center;
+    color: var(--pink);
+    font-family: gomarice;
+    text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
+    font-size: 30pt;
+    transform: translateY(70px);
+}
+
  /* row 17 */
 
 .r17_bodytext {
