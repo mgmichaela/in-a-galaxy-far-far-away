@@ -235,7 +235,7 @@ body {
 }
 
 .APOD {
-    grid-area: 9 / 3 / 10 / 11 ;
+    grid-area: 9 / 1 / 10 / -1 ;
     font-size: 21pt;
     font-family: kollektif;
     color: var(--grey);
