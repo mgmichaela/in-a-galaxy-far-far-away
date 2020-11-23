@@ -6,7 +6,7 @@ let latitude = document.querySelector('.lat_num');
 let longitude = document.querySelector('.long_num');
 
 
-const apiRequest = (url, method, data) => {
+const apiRequest = (url, method) => {
     return fetch(url, {
         method: method
       })
@@ -43,7 +43,7 @@ const getAstronautData = async () => {
 
 }
 
-const getIssData = async function () {
+const getIssData = async () => {
     try {
         const response = await apiRequest(issUrl, 'GET');
         const data = response;

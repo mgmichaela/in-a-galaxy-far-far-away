@@ -16,7 +16,7 @@ const astronautData = fetch(astroUrl)
             newName.innerText = person.name;
             astronautNames.appendChild(newName);
         }
-    })
+})
 
 const getIssData = async function () {
     const response = await fetch(issUrl);
