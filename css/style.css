@@ -31,8 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background: rgb(19,62,124);
-    background: linear-gradient(180deg, rgba(19,62,124,1) 0%, rgba(9,24,51,1) 100%);
+    background: rgba(9,24,51,1) url(/assets/stars.png) repeat top center;
+    /* background: linear-gradient(180deg, rgba(19,62,124,1) 0%, rgba(9,24,51,1) 100%); */
 }
 ol, ul {
 	list-style: none;
@@ -169,6 +169,14 @@ body {
     transform: translateY(0px);
 }
 
+.anotation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-transform: initial;
+    line-height: 14px;
+    padding-top: 10px;
+}
+
 /* ROW 5 */
 
 .r5_arrow {
@@ -232,6 +240,7 @@ body {
     color: var(--grey);
     text-align: center;
     align-self: center;
+    z-index: 0;
 }
 
 .APOD {
@@ -241,6 +250,7 @@ body {
     color: var(--grey);
     text-align: center;
     align-self: flex-end;
+    z-index: 0;
 }
 
 .r9_satilite {
@@ -288,11 +298,25 @@ body {
 /* ROW 15 */
 
 .r15_saturn {
+    animation: saturnMove 8s ease-in-out  infinite  ;
     grid-area: 15 / 10 / 16 / -1;
     height: 135pt;
     width: auto;
     align-self: flex-end;
     justify-self: flex-end;
+    z-index: 0;
+}
+
+@keyframes saturnMove {
+    0%{
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 /* ROW 16 */
@@ -379,3 +403,6 @@ body {
 .r19_ul a {
     color: var(--grey);
 }
+
+
+  

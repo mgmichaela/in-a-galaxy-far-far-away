@@ -39,6 +39,7 @@
     grid-row-start: 2;
     align-self: top;
     justify-self: right;
+    z-index: 0;
 }
 
 .r2_mouse_arrows {
@@ -75,7 +76,7 @@
     grid-row-end:3;
     justify-self: center;
     align-self: flex-end;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     z-index: 3;
    
 }
@@ -98,8 +99,32 @@
     grid-column-start: 9;
     grid-column-end: 11;
     grid-row: 2;
-
+    z-index: 1;
 }
+
+.r2_spaceManArm {
+    animation: wavingArm 2s ease-in-out infinite;
+    width: 48px;
+    height: auto;
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row: 2 / 3;
+    transform: translateX(55px) translateY(-3px);
+    transform-origin: bottom right;
+    z-index: 0;
+}
+
+@keyframes wavingArm {
+    0% {
+      transform: rotate(0deg) translateX(55px) translateY(-3px);
+    }
+    50% {
+      transform: rotate(20deg) translateX(50px) translateY(-16px);
+    }
+    100% {
+      transform: rotate(0deg) translateX(55px) translateY(-3px);
+    }
+  }
 
 .r2_spaceManText {
     font-family: kollektif;
