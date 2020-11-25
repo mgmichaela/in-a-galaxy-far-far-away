@@ -319,6 +319,71 @@ body {
     }
 }
 
+.chatInput {
+    grid-area: 15 / 1 / 16 / 4;
+    z-index: 0;
+    height: 40px;
+    padding-left: 10px;
+    transform: translateY(30px);
+    border-radius: 10px;
+}
+
+.sendBtn {
+    font-family: kollektif;
+    grid-area: 15 / 4 / 16 / 5;
+    z-index: 0;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    margin-left: 10px;
+    background: var(--dark_purple);
+    transform: translateY(30px);
+}
+
+.chatWindow {
+    grid-area: 14 / 5 / 16 / 9;
+    border-radius: 20px;
+    height: 385px;
+    width: 270px;
+    z-index: 0;
+    display: flex;
+    background-color: white;
+    align-items: flex-end;
+    justify-content: center;
+    padding:10px ;
+    justify-self: center;
+}
+
+.chatWindow ul li {
+    align-self: center;
+}
+
+.humanMessage {
+    border-radius: 10px;
+    padding:10px;
+    width: 250px;
+    min-height: 20px;
+    text-align: left;
+    align-content: center;
+    margin-top: 10px;
+    background-color:var(--dark_green) ;
+    color: white;
+}
+
+.alienMessage {
+    color: white;
+    border-radius: 10px;
+    padding:10px;
+    width: 250px;
+    margin-top: 10px;
+    min-height: 20px;
+    text-align: right;
+    align-content: center;
+    background-color:var(--pink) ;
+}
+
 /* ROW 16 */
 
 .r16_quotebox {
