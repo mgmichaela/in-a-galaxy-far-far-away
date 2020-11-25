@@ -16,7 +16,7 @@ const apiRequest = (url, method) => {
           } else {
             return response.json().then(errData => {
               console.log(errData);
-              throw new Error('Server is not responding.');
+              throw new Error('Something about error.');
             });
           }
         })

@@ -1,0 +1,22 @@
+{
+  "name": "api-website",
+  "version": "1.0.0",
+  "description": "**Brief Objectives** ``` Create a webpage that uses one or more APIs ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgmichaela/api-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgmichaela/api-website/issues"
+  },
+  "homepage": "https://github.com/mgmichaela/api-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
