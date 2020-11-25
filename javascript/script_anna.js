@@ -6,9 +6,10 @@ let latitude = document.querySelector('.lat_num');
 let longitude = document.querySelector('.long_num');
 
 
-const apiRequest = (url, method) => {
+const apiRequest = (url, method, headers) => {
     return fetch(url, {
-        method: method
+        method: method,
+        headers: headers
       })
         .then(response => {
           if (response.status >= 200 && response.status < 300) {
