@@ -1,0 +1,184 @@
+:root {
+    --dark_purple: #711C91;
+    --pink: #EA00D9;
+    --light_blue: #0ABDC6;
+    --dark_blue: #133E7C;
+    --background_blue: #091833;
+    --light_green: #02C63D;
+    --dark_green: #005319;
+    --white: #ffffff;
+    --grey: #F2F2f2;
+}
+
+@font-face {
+    font-family: alarm-clock;
+    src: url(/fonts/alarm\ clock.ttf);
+}
+
+@font-face{
+    font-family: gomarice;
+    src: url(/fonts/gomarice_gogono_cocoa_mochi.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(/fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(/fonts/norwester.otf);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color:var(--background_blue);
+    height: 450px;
+    align-items: center;
+}
+
+.rocketcontainer {
+    display: flex;
+    grid-area: 1 / 2 / 2 / 12;
+    height: 400px;
+    z-index: 3;
+}
+
+.card1 {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 350px;
+    width: 300px;
+    background-color: var(--background_blue);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--pink);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card1 > .image {
+    background-image: url(./assets/stars.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 234px;
+    width: 300px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card1 > .name {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.card1 > .date {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    border-radius:0 0 18px 18px;
+    font-size: 12pt;
+}
+
+.card2 {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 350px;
+    width: 300px;
+    background-color: var(--background_blue);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--pink);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card2 > .image {
+    background-image: url(./assets/stars.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 234px;
+    width: 300px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card2 > .name {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.card2 > .date {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    border-radius:0 0 18px 18px;
+    font-size: 12pt;
+}
+
+.card3 {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 350px;
+    width: 300px;
+    background-color: var(--background_blue);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--pink);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card3 > .image {
+    background-image: url(./assets/stars.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 234px;
+    width: 300px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card3 > .name {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.card3 > .date {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    border-radius:0 0 18px 18px;
+    font-size: 12pt;
+}

@@ -470,4 +470,157 @@ body {
 }
 
 
-  
+.rocketcontainer {
+    transform: translateY(200px);
+    display: flex;
+    grid-area: 4 / 2 / 6 / 12;
+    height: 400px;
+    z-index: 1;
+}
+
+.card1 {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 350px;
+    width: 300px;
+    background-color: var(--background_blue);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--pink);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card1 > .image {
+    background-image: '';
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 234px;
+    width: 250px;
+    border-radius: 18px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card1 > .name {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.card1 > .date {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    border-radius:0 0 18px 18px;
+    font-size: 12pt;
+}
+
+.card2 {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 350px;
+    width: 300px;
+    background-color: var(--background_blue);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--pink);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card2 > .image {
+    background-image: url(./assets/stars.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 234px;
+    width: 250px;
+    border-radius: 18px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card2 > .name {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.card2 > .date {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    border-radius:0 0 18px 18px;
+    font-size: 12pt;
+}
+
+.card3 {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 350px;
+    width: 300px;
+    background-color: var(--background_blue);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--pink);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card3 > .image {
+    background-image: url(./assets/stars.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 234px;
+    width: 250px;
+    border-radius: 18px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card3 > .name {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.card3 > .date {
+    font-family: kollektif;
+    color: #F2F2f2;
+    height: 58.5px;
+    width: 300px;
+    text-align: center;
+    border-radius:0 0 18px 18px;
+    font-size: 12pt;
+}
