@@ -10,15 +10,23 @@
     <link rel="stylesheet" href="/css/style_adam.css">
     <link rel="stylesheet" href="/css/style_anna.css">
     <link rel="stylesheet" href="/css/style_michaela.css">
+    <link rel="stylesheet" href="/css/twinkle.css">
     <script src="/javascript/script_anna.js" defer></script>
-    <script src="/javascript/sciprt_paul.js" defer></script>
-    <script src="/javascript/sciprt_adam.js" defer></script>
-    <script src="/javascript/sciprt_micheala.js" defer></script>
+    <script src="/javascript/script_paul.js" defer></script>
+    <!-- <script src="/javascript/script_adam.js" defer></script>
+    <script src="/javascript/script_micheala.js" defer></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="type/javascript" src="/javascript/script.js" defer></script>
 </head>
 <body>
 <div class="wrapper">
   
+    
+<div class="stars"></div>
+<div class="twinkling"></div>
+
+<canvas id="canvas"></canvas>
+
 <!--Row 1-->
   
     <h2 class="eyebrow_text">WHATS GOING ON</h2>
@@ -34,7 +42,8 @@
     <img src="/assets/Master ai-04.png" class="r2_rocket shadowed">
     <img src="/assets/Master ai-05.png" class="r2_rocket_smoke">
     <img src="/assets/Master ai-17.png" class="r2_arrow">
-    <img src="/assets/Master ai-24.png" class="r2_spaceMan shadowed">
+    <img src="/assets/Master ai-26.png" class="r2_spaceMan shadowed">
+    <img src="/assets/Master ai-25.png" class="r2_spaceManArm shadowed">
 
     <h3 class="r2_spaceManText">RIGHT NOW THERE ARE</h3>
     <h3 class="r2_spaceManTextTwo">ASTRONAUTS IN SPACE</h3>
@@ -47,6 +56,7 @@
             <div class="r3_numbers">
                 <h4>LAT: <span class="lat_num">xxxxxxx</span></h4>
                 <h4>LONG: <span class="long_num">xxxxxxx</span></h4>
+                <p class="anotation">Each degree of latitude/longitude is approximately 69 miles (111 kilometers) apart at the equator</p>
             </div>
         </section>
 
@@ -99,7 +109,7 @@
 <!--Row 7-->
 
     <section class="r7_wrapper">
-        <img src="/assets/Master ai-18.png" class="r7_frame">
+        <img src="/assets/Master ai-18.png" class="r7_frame shadowed">
         <div>
             <h5 class="r7_weather_report">Weather Report</h5>
         </div>
@@ -118,7 +128,7 @@
                 <div class="r7_weather_2">xxxx</div>
     </div>
     </section>
-    <img src="/assets/Master ai-01.png" class="r7_planet">
+    <img src="/assets/Master ai-01.png" class="r7_planet shadowed">
     <p class="r7_text">There are currently*
         <br>
         <span class="r7_current_obj">X</span>
@@ -201,6 +211,9 @@
         <li><a>TBD</a></li>
         <hr>
         <li>Various Illustrations Sourced From <a href="https://www.vecteezy.com">Vecteezy</a></li>
+        <hr>
+        <li>Libraries Used</li>
+        <li><a href="https://scrollrevealjs.org/">Scroll Reveal</a></li>
         <hr>
         <li><a href="https://github.com/mgmichaela/api-website">Source Code</a></li>
     </ul>

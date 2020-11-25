@@ -45,6 +45,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    z-index: 1;
 }
 
 .r3_numbers {
@@ -61,7 +62,6 @@
 
 .r3_star {
     height: 20px;
-    /*transform: translateY(125px);*/
     grid-column-start: 1;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -82,7 +82,7 @@
 
 .r3_sun {
     width: 160px;
-    z-index: -1;
+    z-index: 0;
     transform: translateY(-80px) translateX(40px);
     grid-column-start: 5;
     grid-column-end: 7;
@@ -113,6 +113,7 @@
 }
 
 .r3_moon {
+    animation: orbitMoon 90s ease-in-out infinite;
     width: 100px;
     justify-self: flex-end;
     align-self: flex-end;
@@ -123,12 +124,27 @@
     z-index: 4;
 }
 
+@keyframes orbitMoon {
+    0% { 
+        transform: translateX(0px) translateY(0px) rotate(0deg)
+    }
+
+    50% {
+        transform: translateX(-300px) translateY(0px) rotate(75deg)
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(0deg)
+    }
+}
+
 .r3_list_of_names {
+    list-style-type: circle;
     font-family: Kollektif;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
     text-transform: uppercase;
     text-align: left;
     transform: translateX(30px);
@@ -151,6 +167,7 @@
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 8;
+    z-index: 0;
 }
 
 .r7_frame {
@@ -207,9 +224,11 @@
     grid-column-end: 9;
     grid-row-start: 7;
     grid-row-end: 8;
+    z-index: 0;
 }
 
 .r7_current_obj {
+    transform-style: preserve-3d;
     font-family: Gogono Cocoa Mochi;
     font-style: normal;
     font-weight: normal;
@@ -226,8 +245,7 @@
 
 .r7_object {
     width: 420px;
-    transform: rotate(1.13deg);
-    transform: translateX(45px) translateY(-50px);
+    transform: translateX(45px) translateY(-50px) rotate(20deg);
     justify-self: flex-end;
     align-self: center;
     grid-column-start: 9;
