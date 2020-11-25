@@ -46,6 +46,7 @@
     color: var(--grey);
     text-align: right;
     align-self: center;
+    z-index: 0;
 }
 
 .r4_pop_no {
@@ -58,6 +59,7 @@
     color: var(--pink);
     -webkit-text-stroke: 1px white;
     text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
+    z-index: 0;
 }
 
 
@@ -135,12 +137,14 @@
 }
 
 .r12_picture_info {
-    grid-column: 2 / 8;
+    grid-column: 2 / 12;
     grid-row: 12 / 13;
     align-self: start;
-    font-family: kollektif;
-    font-size: 21pt;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 12pt;
     color: var(--grey);
+    z-index: 0;
 }
 
 .r12_star1 {
@@ -161,6 +165,7 @@
     display: grid;
     background-image: url("/assets/Arp273Main_HubblePestana_3079.jpg");
     background-size: cover;
+    background-position: center;
     z-index: 2;
 }
 
