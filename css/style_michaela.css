@@ -191,7 +191,7 @@
     font-family: alarm-clock;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 15.2px;
     line-height: 21px;
     text-transform: uppercase;
     color: var(--light_green);
@@ -229,7 +229,7 @@
 
 .r7_current_obj {
     transform-style: preserve-3d;
-    font-family: Gogono Cocoa Mochi;
+    font-family: gomarice;
     font-style: normal;
     font-weight: normal;
     font-size: 95px;
