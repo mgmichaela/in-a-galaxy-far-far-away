@@ -6,12 +6,21 @@ const imgDesc = document.querySelector('.r12_picture_info')
 const neoNumber = document.querySelector('.r7_current_obj')
 const catchDate = document.querySelector('.footerDate')
 
+
+
 const mainQuoteText = document.querySelector('.r16_quotetext')
 const mainQuoteAuthor = document.querySelector('.r17_bodytext')
 
+const getToday = (offset = 0) => {
+    const today = new Date();
+    const day = new Date(today);
+    day.setDate(today.getDate() + offset);
+    return day.toISOString().slice(0, 10);
+}
+
 const today = new Date()
-const startDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-const endDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+(today.getDate()+1);
+const startDate = getToday();
+const endDate = getToday(1);
 
 const dateWindow = '*Current date is a 24 hour period between '+startDate+' / '+endDate+'.'
 
@@ -47,6 +56,66 @@ const getMeteorData = async () => {
 
 getMeteorData()
 
+ // Space Launch cards
+
+const card1RocketName = document.querySelector('.card1 > .name')
+const card1Rocketdate = document.querySelector('.card1 > .date')
+const card1RocketImage = document.querySelector('.card1 > .image')
+
+const card2RocketName = document.querySelector('.card2 > .name')
+const card2Rocketdate = document.querySelector('.card2 > .date')
+const card2RocketImage = document.querySelector('.card2 > .image')
+
+const card3RocketName = document.querySelector('.card3 > .name')
+const card3Rocketdate = document.querySelector('.card3 > .date')
+const card3RocketImage = document.querySelector('.card3 > .image')
+
+const card1 = document.querySelector('.card1')
+const card2 = document.querySelector('.card2')
+const card3 = document.querySelector('.card3')
+
+const rocketLaunchUrl = 'https://ll.thespacedevs.com/2.0.0/launch/upcoming/'
+
+const getLaunchData = async () => {
+    try {
+        
+        const response = await apiRequest(rocketLaunchUrl, 'GET');
+
+        let c1rocketName = response.results[0].name;
+        let c1rocketDate = response.results[0].window_start;
+        let c1rocketImage = response.results[0].image
+        let c1altText = response.results[0].mission.description;
+            card1RocketName.innerText = c1rocketName;
+            card1Rocketdate.innerText = c1rocketDate;
+            card1RocketImage.style.backgroundImage = 'url('+c1rocketImage+')'
+            card1.setAttribute('title',`'`+c1altText+`'`)
+
+        let c2rocketName = response.results[1].name;
+        let c2rocketDate = response.results[1].window_start;
+        let c2rocketImage = response.results[1].image
+        let c2altText = response.results[1].mission.description;
+            card2RocketName.innerText = c2rocketName;
+            card2Rocketdate.innerText = c2rocketDate;
+            card2RocketImage.style.backgroundImage = 'url('+c2rocketImage+')'
+            card2.setAttribute('title',`'`+c2altText+`'`)
+
+        let c3rocketName = response.results[2].name;
+        let c3rocketDate = response.results[2].window_start;
+        let c3rocketImage = response.results[2].image
+        let c3altText = response.results[2].mission.description;
+            card3RocketName.innerText = c3rocketName;
+            card3Rocketdate.innerText = c3rocketDate;
+            card3RocketImage.style.backgroundImage = 'url('+c3rocketImage+')'
+            card3.setAttribute('title',`'`+c3altText+`'`)
+
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+getLaunchData()
+
+///
 
 catchDate.innerText = dateWindow
 
