@@ -86,7 +86,7 @@ const getLaunchData = async () => {
         let c1rocketImage = response.results[0].image
         let c1altText = response.results[0].mission.description;
             card1RocketName.innerText = c1rocketName;
-            card1Rocketdate.innerText = c1rocketDate;
+            card1Rocketdate.innerText = c1rocketDate.slice(0, 10);
             card1RocketImage.style.backgroundImage = 'url('+c1rocketImage+')'
             card1.setAttribute('title',`'`+c1altText+`'`)
 
@@ -95,7 +95,7 @@ const getLaunchData = async () => {
         let c2rocketImage = response.results[1].image
         let c2altText = response.results[1].mission.description;
             card2RocketName.innerText = c2rocketName;
-            card2Rocketdate.innerText = c2rocketDate;
+            card2Rocketdate.innerText = c2rocketDate.slice(0, 10);
             card2RocketImage.style.backgroundImage = 'url('+c2rocketImage+')'
             card2.setAttribute('title',`'`+c2altText+`'`)
 
@@ -104,7 +104,7 @@ const getLaunchData = async () => {
         let c3rocketImage = response.results[2].image
         let c3altText = response.results[2].mission.description;
             card3RocketName.innerText = c3rocketName;
-            card3Rocketdate.innerText = c3rocketDate;
+            card3Rocketdate.innerText = c3rocketDate.slice(0, 10);
             card3RocketImage.style.backgroundImage = 'url('+c3rocketImage+')'
             card3.setAttribute('title',`'`+c3altText+`'`)
 
