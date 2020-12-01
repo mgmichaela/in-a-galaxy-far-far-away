@@ -33,6 +33,7 @@ body {
     line-height: 1;
     background: rgba(9,24,51,1) url(/assets/stars.png) repeat top center;
     /* background: linear-gradient(180deg, rgba(19,62,124,1) 0%, rgba(9,24,51,1) 100%); */
+    
 }
 ol, ul {
 	list-style: none;
@@ -351,36 +352,38 @@ body {
     display: flex;
     background-color: white;
     align-items: flex-end;
-    justify-content: center;
+    /* justify-content: center; */
     padding:10px ;
     justify-self: center;
+    overflow-y: scroll;
 }
 
-.chatWindow ul li {
+/* .chatWindow ul li {
     align-self: center;
-}
+} */
 
 .humanMessage {
     border-radius: 10px;
     padding:10px;
-    width: 250px;
+    width: 200px;
     min-height: 20px;
     text-align: left;
-    align-content: center;
+    justify-content: left;
     margin-top: 10px;
     background-color:var(--dark_green) ;
     color: white;
 }
 
 .alienMessage {
+    font-family: norwester;
     color: white;
     border-radius: 10px;
     padding:10px;
-    width: 250px;
+    width: 200px;
     margin-top: 10px;
     min-height: 20px;
-    text-align: right;
-    align-content: center;
+    margin-left: 30px;
+    text-align: left;
     background-color:var(--pink) ;
 }
 
@@ -397,11 +400,12 @@ body {
 .r16_quotetext {
     grid-area: 16 / 5 / 17 / 9;
     z-index: 2;
+    margin-top: 20px;
     align-self: center;
     justify-self: center;
     color: var(--pink);
     font-family: gomarice;
-    text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
+    /* text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7); */
     font-size: 30pt;
     transform: translateY(70px);
 }
@@ -510,10 +514,11 @@ body {
     font-family: kollektif;
     color: #F2F2f2;
     height: 58.5px;
-    width: 300px;
+    width: 285px;
     text-align: center;
+    align-self: center;
     font-weight: 900;
-    font-size: 16pt;
+    font-size: 13pt;
     text-transform: uppercase;
 }
 
@@ -524,7 +529,7 @@ body {
     width: 300px;
     text-align: center;
     border-radius:0 0 18px 18px;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .card2 {
@@ -559,10 +564,11 @@ body {
     font-family: kollektif;
     color: #F2F2f2;
     height: 58.5px;
-    width: 300px;
+    width: 285px;
     text-align: center;
+    align-self: center;
     font-weight: 900;
-    font-size: 16pt;
+    font-size: 13pt;
     text-transform: uppercase;
 }
 
@@ -573,7 +579,7 @@ body {
     width: 300px;
     text-align: center;
     border-radius:0 0 18px 18px;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .card3 {
@@ -608,10 +614,11 @@ body {
     font-family: kollektif;
     color: #F2F2f2;
     height: 58.5px;
-    width: 300px;
+    width: 285px;
+    align-self: center;
     text-align: center;
     font-weight: 900;
-    font-size: 16pt;
+    font-size: 13pt;
     text-transform: uppercase;
 }
 
@@ -622,5 +629,5 @@ body {
     width: 300px;
     text-align: center;
     border-radius:0 0 18px 18px;
-    font-size: 12pt;
+    font-size: 10pt;
 }

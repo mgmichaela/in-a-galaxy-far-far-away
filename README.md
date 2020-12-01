@@ -26,12 +26,18 @@ Features of this page includes current information about the human spaceflight p
 4. Adam Webb - *Coding / Check In Leader / Presenter*
 
 **APIs Utilized**
-1. api.nasa.gov
-2. worldpop.org/sdi/introapi
+1. [Nasa API](api.nasa.gov)
+2. [Open Notify](open-notify.org)
+3. [Wit Ai](wit.ai)
+4. [Open Weather](openweathermap.org/api)
+5. [Space Dev's](ll.thespacedevs.com)
+6. [Type Fit](type.fit/api/quotes)
 
 **Libraries Utilized**
 1. [Scroll Reveal](https://scrollrevealjs.org/)
+2. [Math.js](https://mathjs.org/)
 ---
-Some art assets from  
+Art assets from
+
 [Vecteezy](https://www.vecteezy.com/)
 

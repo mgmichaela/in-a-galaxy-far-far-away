@@ -11,9 +11,16 @@ const catchDate = document.querySelector('.footerDate')
 const mainQuoteText = document.querySelector('.r16_quotetext')
 const mainQuoteAuthor = document.querySelector('.r17_bodytext')
 
+const getToday = (offset = 0) => {
+    const today = new Date();
+    const day = new Date(today);
+    day.setDate(today.getDate() + offset);
+    return day.toISOString().slice(0, 10);
+}
+
 const today = new Date()
-const startDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-const endDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+(today.getDate()+1);
+const startDate = getToday();
+const endDate = getToday(1);
 
 const dateWindow = '*Current date is a 24 hour period between '+startDate+' / '+endDate+'.'
 
