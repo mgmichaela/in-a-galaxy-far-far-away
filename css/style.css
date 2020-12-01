@@ -405,6 +405,7 @@ body {
     justify-self: center;
     color: var(--pink);
     font-family: gomarice;
+    max-width: 400px;
     /* text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7); */
     font-size: 30pt;
     transform: translateY(70px);
