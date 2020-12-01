@@ -127,7 +127,7 @@ ScrollReveal ().reveal('.star_small, .r4_star3, .r4_star4, .r5_star_big' , {
     duration: 500,
     });
 
-ScrollReveal ().reveal('.star_big_10, .satilite, .r9_satilite, .r4_star2, .r4_star6, .r5_star_big2, .r7_star' , {
+ScrollReveal ().reveal('.r8_star2 .r11_star .r17_star_small .star_big_10, .satilite, .r9_satilite, .r4_star2, .r4_star6, .r5_star_big2, .r7_star' , {
     easing: 'ease',
     scale: '0.5',
     reset: 'true',
@@ -135,7 +135,7 @@ ScrollReveal ().reveal('.star_big_10, .satilite, .r9_satilite, .r4_star2, .r4_st
     duration: 1500,
     });
     
-ScrollReveal ().reveal('.star_big, .r3_star, .r4_star1' , {
+ScrollReveal ().reveal('.r8_star1 .r13_star_small .star_big, .r3_star, .r4_star1' , {
     easing: 'ease',
     scale: '0.5',
     reset: 'true',
@@ -143,7 +143,7 @@ ScrollReveal ().reveal('.star_big, .r3_star, .r4_star1' , {
     duration: 2500,
     });
         
-ScrollReveal ().reveal('.r2_astronautNumber, .r4_pop_no, .r5_percentage_text, .r7_current_obj' , {
+ScrollReveal ().reveal('.r14_star .r18_star_small .r2_astronautNumber, .r4_pop_no, .r5_percentage_text, .r7_current_obj' , {
     easing: 'ease',
     scale: '1',
     reset: 'true',
@@ -151,7 +151,7 @@ ScrollReveal ().reveal('.r2_astronautNumber, .r4_pop_no, .r5_percentage_text, .r
     origin: 'left',
     });
 
-ScrollReveal ().reveal('.r3_list_of_names' , {
+ScrollReveal ().reveal('.r17_star_small2 .r3_list_of_names .r18_star_small2' , {
     easing: 'ease',
     scale: '1',
     reset: 'true',

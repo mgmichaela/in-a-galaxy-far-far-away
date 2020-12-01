@@ -320,6 +320,24 @@ body {
     }
 }
 
+.spinning {
+    animation: spin 3s infinite;
+    font-size: 76px;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    /* 50% {
+        transform: rotate(180deg);
+    } */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .chatInput {
     grid-area: 15 / 1 / 16 / 4;
     z-index: 0;
