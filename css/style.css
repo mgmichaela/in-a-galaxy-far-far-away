@@ -117,7 +117,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
-    font-size: 62px;
+    font-size: 60px;
     transform: translateY(-40px);
     color: var(--grey);
 }
