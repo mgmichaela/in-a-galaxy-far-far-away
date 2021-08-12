@@ -44,7 +44,7 @@
   }
 
 .twinkling{
-  background:transparent url(/assets/twinkling.png) repeat top center;
+  background:transparent url(./assets/twinkling.png) repeat top center;
   z-index:0;
   -moz-animation:move-twink-back 200s linear infinite;
   -ms-animation:move-twink-back 200s linear infinite;

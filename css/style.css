@@ -53,22 +53,22 @@ table {
 
 @font-face {
     font-family: alarm-clock;
-    src: url(/fonts/alarm\ clock.ttf);
+    src: url(../fonts/alarm\ clock.ttf);
 }
 
 @font-face{
     font-family: gomarice;
-    src: url(/fonts/gomarice_gogono_cocoa_mochi.ttf);
+    src: url(../fonts/gomarice_gogono_cocoa_mochi.ttf);
 }
 
 @font-face {
     font-family: kollektif;
-    src: url(/fonts/Kollektif.ttf);
+    src: url(../fonts/Kollektif.ttf);
 }
 
 @font-face {
     font-family: norwester;
-    src: url(/fonts/norwester.otf);
+    src: url(../fonts/norwester.otf);
 }
 
 body {
