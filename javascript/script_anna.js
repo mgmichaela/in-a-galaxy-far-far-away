@@ -65,4 +65,4 @@ const issDataIntervals = (n) => {
 
 getAstronautData();
 getIssData();
-issDataIntervals(2000);
+issDataIntervals(5000);

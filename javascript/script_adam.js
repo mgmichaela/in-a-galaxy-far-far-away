@@ -10,7 +10,6 @@ const getQuoteData = async () => {
     try {
         const response = await apiRequest(quoteUrl, 'GET');
         let data = response;
-        console.log(data);
         let num = Math.floor(Math.random() * 10)
         dailyQuote.innerText = JSON.stringify(data[num].text)
         dailyQuoteAuthor.innerText = JSON.stringify(data[num].author)
