@@ -1,5 +1,5 @@
-const astroUrl = 'http://api.open-notify.org/astros.json';
-const issUrl = 'http://api.open-notify.org/iss-now.json';
+const astroUrl = 'https://serverless-functions-exercise.netlify.app/.netlify/functions/astronauts';
+const issUrl = 'https://serverless-functions-exercise.netlify.app/.netlify/functions/iss';
 const astronautsInSpace = document.querySelector('.r2_astronautNumber');
 const astronautNames = document.querySelector('.r3_list_of_names');
 let latitude = document.querySelector('.lat_num');
