@@ -10,7 +10,7 @@ For this brief team 10 decided to create an infographic page that updates live d
 
 Once the idea was decided a day was spent planning the design layout and the HTML breakdown. This allowed us to split the initial development across team members and as long as the design in Figma was followed everything would fit together. This proved to be true and only minor changes were required. 
 
-Features of this page includes current information about the human spaceflight programs around the world, a daily inspirational quote, and a chatbot to talk with aliens! Subtle animations are used throughout the page to refine the design and give it a playful feeling. The ISS position data from [Open Notify](open-notify.org) reloads every 2 seconds, while the rest of the APIs are pulled on page load. 
+Features of this page includes current information about the human spaceflight programs around the world, a daily inspirational quote, and a chatbot to talk with aliens! Subtle animations are used throughout the page to refine the design and give it a playful feeling. The ISS position data from [Open Notify](open-notify.org) reloads every 5 seconds, while the rest of the APIs are pulled on page load. 
 
 ---
 **Tools Used**
